@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Search </title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+	<h1> NSE Securities Data </h1>
+	<form method="post" action="/result">
+		<label for="symbol">SYMBOL: </label>
+		<select id="symbol" name="symbol">
+			<option value=""></option>
+			{% for v in symbols %}
+				<option value="{{v}}"> {{v}} </option>
+			{%  endfor %}
+		</select>
+		<button type="submit" name="Search" value="html">Search</button>
+		{% block content %}{% endblock %}
+		
+	</form>
+</body>
+</html>

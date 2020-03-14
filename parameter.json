@@ -1,0 +1,23 @@
+{
+   "holiday_list":[
+      "10/03/2020",
+      "21/02/2020"
+   ],
+   "column_names":[
+      "SYMBOL",
+      "SERIES",
+      "OPEN",
+      "HIGH",
+      "LOW",
+      "CLOSE",
+      "LAST",
+      "PREVCLOSE",
+      "TOTTRDQTY",
+      "TIMESTAMP"
+   ],
+   "url_base":"https://archives.nseindia.com/content/historical/EQUITIES/",
+   "url_ext": "bhav.csv.zip",
+   "url_mid": "cm", 
+   "chunk_size": 10000,
+   "parsed_filename": "parsed_file.csv"
+}

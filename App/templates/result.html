@@ -1,0 +1,8 @@
+{% extends "search.html" %}
+{% block content %}
+<br><br>
+		{% for row in rows %}
+        	    {{ row|safe }}
+		{% endfor %}
+
+{% endblock %}
